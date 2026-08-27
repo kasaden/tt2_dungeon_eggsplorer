@@ -21,26 +21,26 @@ const ITEMS = [
   { id: "pet_eggs", name: "Pet Eggs", symbol: "Egg", short: "Eggs", color: "#9dd49d", bg: "#59627f" },
   { id: "skill_points", name: "Skill Points", symbol: "SP", short: "SP", color: "#e5c95b", bg: "#59627f" },
   { id: "perk_tickets", name: "Perk Tickets", symbol: "PT", short: "Tickets", color: "#e996a9", bg: "#59627f" },
-  { id: "fortune_hero_weapon", name: "Fortune Hero Weapon", symbol: "FHW", short: "FHW", color: "#92bfe5", bg: "#59627f" },
-  { id: "fortune_hero_scroll", name: "Fortune Hero Scroll", symbol: "FHS", short: "FHS", color: "#b9a0dc", bg: "#59627f" },
+  { id: "fortune_hero_weapon", name: "Fortune Hero Weapon", symbol: "FHW", short: "FHW", color: "#92bfe5", bg: "#59627f", quantity: false },
+  { id: "fortune_hero_scroll", name: "Fortune Hero Scroll", symbol: "FHS", short: "FHS", color: "#b9a0dc", bg: "#59627f", quantity: false },
 
-  { id: "normal_equipment", name: "Normal Equipment drops", symbol: "Eq", short: "Normal Eq", color: "#ffffff", bg: "#59627f" },
-  { id: "event_equipment", name: "Event Equipment drops", symbol: "Eq", short: "Event Eq", color: "#e3949f", bg: "#59627f" },
-  { id: "rare_equipment", name: "Rare Equipment drops", symbol: "Eq", short: "Rare Eq", color: "#80aee0", bg: "#59627f" },
-  { id: "legendary_equipment", name: "Legendary Equipment drops", symbol: "Eq", short: "Leg Eq", color: "#dba34b", bg: "#59627f" },
-  { id: "mythic_equipment", name: "Mythic Equipment Drop", symbol: "Eq", short: "Myth Eq", color: "#b891d4", bg: "#59627f" },
-  { id: "unique_equipment", name: "Unique Equipment Drop", symbol: "Eq", short: "Unique Eq", color: "#76cbc2", bg: "#59627f" },
+  { id: "normal_equipment", name: "Normal Equipment drops", symbol: "Eq", short: "Normal Eq", color: "#ffffff", bg: "#59627f", quantity: false },
+  { id: "event_equipment", name: "Event Equipment drops", symbol: "Eq", short: "Event Eq", color: "#e3949f", bg: "#59627f", quantity: false },
+  { id: "rare_equipment", name: "Rare Equipment drops", symbol: "Eq", short: "Rare Eq", color: "#80aee0", bg: "#59627f", quantity: false },
+  { id: "legendary_equipment", name: "Legendary Equipment drops", symbol: "Eq", short: "Leg Eq", color: "#dba34b", bg: "#59627f", quantity: false },
+  { id: "mythic_equipment", name: "Mythic Equipment Drop", symbol: "Eq", short: "Myth Eq", color: "#b891d4", bg: "#59627f", quantity: false },
+  { id: "unique_equipment", name: "Unique Equipment Drop", symbol: "Eq", short: "Unique Eq", color: "#76cbc2", bg: "#59627f", quantity: false },
 
   { id: "event_cosmetics", name: "Event Cosmetics", symbol: "EC", short: "Cosmetics", color: "#df96c1", bg: "#59627f" },
   { id: "raid_wild_cards", name: "Raid Wild Cards", symbol: "RWC", short: "RWC", color: "#ca91da", bg: "#59627f" },
 
-  { id: "silver_keys", name: "Silver Keys", symbol: "SK", short: "S Key", color: "#d6d6d7", bg: "#59627f" },
-  { id: "silver_locks", name: "Silver Locks", symbol: "SL", short: "S Lock", color: "#d6d6d7", bg: "#59627f" },
-  { id: "gold_keys", name: "Gold Keys", symbol: "GK", short: "G Key", color: "#dfb654", bg: "#59627f" },
-  { id: "gold_locks", name: "Gold Locks", symbol: "GL", short: "G Lock", color: "#dfb654", bg: "#59627f" },
-  { id: "special_keys", name: "Special Keys", symbol: "SpK", short: "Sp Key", color: "#b69bd5", bg: "#59627f" },
-  { id: "special_locks", name: "Special Locks", symbol: "SpL", short: "Sp Lock", color: "#b69bd5", bg: "#59627f" },
-  { id: "lock_free_tiles", name: "Lock-free Tiles", symbol: "LF", short: "Lock-free", color: "#a3d2af", bg: "#59627f" },
+  { id: "silver_keys", name: "Silver Keys", symbol: "SK", short: "🔑\nSilver Key", color: "#d6d6d7", bg: "#59627f", quantity: false },
+  { id: "silver_locks", name: "Silver Locks", symbol: "SL", short: "🔒\nSilver Lock", color: "#d6d6d7", bg: "#59627f", quantity: false },
+  { id: "gold_keys", name: "Gold Keys", symbol: "GK", short: "🔑\nGold Key", color: "#dfb654", bg: "#59627f", quantity: false },
+  { id: "gold_locks", name: "Gold Locks", symbol: "GL", short: "🔒\nGold Lock", color: "#dfb654", bg: "#59627f", quantity: false },
+  { id: "special_keys", name: "Special Keys", symbol: "SpK", short: "🔑\n{name}", suffix: "Key", color: "#b69bd5", bg: "#59627f", quantity: false, special: true },
+  { id: "special_locks", name: "Special Locks", symbol: "SpL", short: "🔒\n{name}", suffix: "Lock", color: "#b69bd5", bg: "#59627f", quantity: false, special: true },
+  { id: "lock_free_tiles", name: "Lock-free Tiles", symbol: "LF", short: "🔓\nLock-free", color: "#a3d2af", bg: "#59627f", quantity: false },
 
   { id: "erase", name: "Erase", symbol: "×", short: "", color: "#b8b8b8", bg: "#34363c", quantity: false, erase: true }
 ];
@@ -56,6 +56,9 @@ const state = {
   ),
   otherText: "Other",
   otherColor: "#ffffff",
+  specialText: Object.fromEntries(
+    ITEMS.filter((item) => item.special).map((item) => [item.id, ""])
+  ),
   pointerDown: false,
   dragTouched: new Set()
 };
@@ -366,6 +369,32 @@ function renderItemTable() {
       row.appendChild(dash);
     }
 
+    if (item.special) {
+      const input = document.createElement("input");
+      input.className = "item-special-input";
+      input.type = "text";
+      input.maxLength = 10;
+      input.value = state.specialText[item.id];
+      input.placeholder = "Ruby, Sun...";
+
+      input.addEventListener("focus", () => {
+        state.selectedItemId = item.id;
+        row.classList.add("active");
+      });
+
+      input.addEventListener("input", (event) => {
+        state.specialText[item.id] = event.target.value.slice(0, 10);
+        state.selectedItemId = item.id;
+      });
+
+      row.appendChild(input);
+
+      const suffix = document.createElement("span");
+      suffix.className = "item-special-suffix";
+      suffix.textContent = item.suffix;
+      row.appendChild(suffix);
+    }
+
     els.itemTable.appendChild(row);
   });
 }
@@ -381,6 +410,16 @@ function buildCellFromItem(item) {
     return {
       text: (state.otherText || "Other").trim().slice(0, 18),
       textColor: state.otherColor,
+      bgColor: item.bg
+    };
+  }
+
+  if (item.special) {
+    const name = state.specialText[item.id].trim();
+
+    return {
+      text: item.short.replace("{name}", name ? `${name} ${item.suffix}` : item.suffix),
+      textColor: item.color,
       bgColor: item.bg
     };
   }
