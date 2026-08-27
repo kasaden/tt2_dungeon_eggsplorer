@@ -11,8 +11,10 @@ const EMPTY_CELL = {
 };
 
 const ITEMS = [
+  { id: "erase", name: "Erase", symbol: "×", short: "", color: "#b8b8b8", bg: "#34363c", quantity: false, erase: true },
   { id: "up", name: "↑UP↑", symbol: "↑", short: "↑", color: "#ffffff", bg: "#59627f", quantity: false },
   { id: "down", name: "↓DOWN↓", symbol: "↓", short: "↓", color: "#ffffff", bg: "#59627f", quantity: false },
+  { id: "lock_free_tiles", name: "Lock-free Tiles", symbol: "LF", short: "🔓\nLock-free", color: "#a3d2af", bg: "#59627f", quantity: false },
   { id: "other", name: "Other", symbol: "Aa", short: "", color: "#ffffff", bg: "#59627f", other: true },
 
   { id: "fire_stones", name: "Fire Stones", symbol: "FS", short: "FS", color: "#f0a22e", bg: "#59627f" },
@@ -39,10 +41,8 @@ const ITEMS = [
   { id: "gold_keys", name: "Gold Keys", symbol: "GK", short: "🔑\nGold Key", color: "#dfb654", bg: "#59627f", quantity: false },
   { id: "gold_locks", name: "Gold Locks", symbol: "GL", short: "🔒\nGold Lock", color: "#dfb654", bg: "#59627f", quantity: false },
   { id: "special_keys", name: "Special Keys", symbol: "SpK", short: "🔑\n{name}", suffix: "Key", color: "#b69bd5", bg: "#59627f", quantity: false, special: true },
-  { id: "special_locks", name: "Special Locks", symbol: "SpL", short: "🔒\n{name}", suffix: "Lock", color: "#b69bd5", bg: "#59627f", quantity: false, special: true },
-  { id: "lock_free_tiles", name: "Lock-free Tiles", symbol: "LF", short: "🔓\nLock-free", color: "#a3d2af", bg: "#59627f", quantity: false },
+  { id: "special_locks", name: "Special Locks", symbol: "SpL", short: "🔒\n{name}", suffix: "Lock", color: "#b69bd5", bg: "#59627f", quantity: false, special: true }
 
-  { id: "erase", name: "Erase", symbol: "×", short: "", color: "#b8b8b8", bg: "#34363c", quantity: false, erase: true }
 ];
 
 const state = {
