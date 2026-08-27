@@ -344,7 +344,7 @@ button.danger:hover {
   background: var(--cell);
   color: white;
   font-weight: 700;
-  font-size: clamp(8px, 2.3vw, 15px);
+  font-size: clamp(7px, 1.5vw, 11px);
   line-height: 1.05;
   text-align: center;
   white-space: pre-line;

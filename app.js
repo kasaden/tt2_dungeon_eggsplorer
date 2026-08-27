@@ -30,7 +30,7 @@ function cache() {
 
 function normalizeCell(cell) {
   return {
-    text: String(cell?.text || "").slice(0, 18),
+    text: String(cell?.text || "").slice(0, 32),
     textColor: cell?.textColor || "#ffffff",
     bgColor: cell?.bgColor || EMPTY_CELL.bgColor
   };

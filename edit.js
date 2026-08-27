@@ -17,24 +17,24 @@ const ITEMS = [
   { id: "lock_free_tiles", name: "Lock-free Tiles", symbol: "LF", short: "🔓\nLock-free", color: "#a3d2af", bg: "#59627f", quantity: false },
   { id: "other", name: "Other", symbol: "Aa", short: "", color: "#ffffff", bg: "#59627f", other: true },
 
-  { id: "fire_stones", name: "Fire Stones", symbol: "FS", short: "FS", color: "#f0a22e", bg: "#59627f" },
-  { id: "diamonds", name: "Diamonds", symbol: "Dia", short: "dias", color: "#54d7ef", bg: "#59627f" },
-  { id: "crafting_shards", name: "Crafting Shards", symbol: "CS", short: "Shards", color: "#dca84b", bg: "#59627f" },
-  { id: "pet_eggs", name: "Pet Eggs", symbol: "Egg", short: "Eggs", color: "#9dd49d", bg: "#59627f" },
-  { id: "skill_points", name: "Skill Points", symbol: "SP", short: "SP", color: "#e5c95b", bg: "#59627f" },
-  { id: "perk_tickets", name: "Perk Tickets", symbol: "PT", short: "Tickets", color: "#e996a9", bg: "#59627f" },
-  { id: "fortune_hero_weapon", name: "Fortune Hero Weapon", symbol: "FHW", short: "FHW", color: "#92bfe5", bg: "#59627f", quantity: false },
-  { id: "fortune_hero_scroll", name: "Fortune Hero Scroll", symbol: "FHS", short: "FHS", color: "#b9a0dc", bg: "#59627f", quantity: false },
+  { id: "fire_stones", name: "Fire Stones", symbol: "FS", short: "Fire Stones", color: "#f0a22e", bg: "#59627f" },
+  { id: "diamonds", name: "Diamonds", symbol: "Dia", short: "Diamonds", color: "#54d7ef", bg: "#59627f" },
+  { id: "crafting_shards", name: "Crafting Shards", symbol: "CS", short: "Crafting Shards", color: "#dca84b", bg: "#59627f" },
+  { id: "pet_eggs", name: "Pet Eggs", symbol: "Egg", short: "Pet Eggs", color: "#9dd49d", bg: "#59627f" },
+  { id: "skill_points", name: "Skill Points", symbol: "SP", short: "Skill Points", color: "#e5c95b", bg: "#59627f" },
+  { id: "perk_tickets", name: "Perk Tickets", symbol: "PT", short: "Perk Tickets", color: "#e996a9", bg: "#59627f" },
+  { id: "fortune_hero_weapon", name: "Fortune Hero Weapon", symbol: "FHW", short: "Fortune Hero Weapon", color: "#92bfe5", bg: "#59627f", quantity: false },
+  { id: "fortune_hero_scroll", name: "Fortune Hero Scroll", symbol: "FHS", short: "Fortune Hero Scroll", color: "#b9a0dc", bg: "#59627f", quantity: false },
 
-  { id: "normal_equipment", name: "Normal Equipment drops", symbol: "Eq", short: "Normal Eq", color: "#ffffff", bg: "#59627f", quantity: false },
-  { id: "event_equipment", name: "Event Equipment drops", symbol: "Eq", short: "Event Eq", color: "#e3949f", bg: "#59627f", quantity: false },
-  { id: "rare_equipment", name: "Rare Equipment drops", symbol: "Eq", short: "Rare Eq", color: "#80aee0", bg: "#59627f", quantity: false },
-  { id: "legendary_equipment", name: "Legendary Equipment drops", symbol: "Eq", short: "Leg Eq", color: "#dba34b", bg: "#59627f", quantity: false },
-  { id: "mythic_equipment", name: "Mythic Equipment Drop", symbol: "Eq", short: "Myth Eq", color: "#b891d4", bg: "#59627f", quantity: false },
-  { id: "unique_equipment", name: "Unique Equipment Drop", symbol: "Eq", short: "Unique Eq", color: "#76cbc2", bg: "#59627f", quantity: false },
+  { id: "normal_equipment", name: "Normal Equipment drops", symbol: "Eq", short: "Normal Equipment", color: "#ffffff", bg: "#59627f", quantity: false },
+  { id: "event_equipment", name: "Event Equipment drops", symbol: "Eq", short: "Event Equipment", color: "#e3949f", bg: "#59627f", quantity: false },
+  { id: "rare_equipment", name: "Rare Equipment drops", symbol: "Eq", short: "Rare Equipment", color: "#80aee0", bg: "#59627f", quantity: false },
+  { id: "legendary_equipment", name: "Legendary Equipment drops", symbol: "Eq", short: "Legendary Equipment", color: "#dba34b", bg: "#59627f", quantity: false },
+  { id: "mythic_equipment", name: "Mythic Equipment Drop", symbol: "Eq", short: "Mythic Equipment", color: "#b891d4", bg: "#59627f", quantity: false },
+  { id: "unique_equipment", name: "Unique Equipment Drop", symbol: "Eq", short: "Unique Equipment", color: "#76cbc2", bg: "#59627f", quantity: false },
 
-  { id: "event_cosmetics", name: "Event Cosmetics", symbol: "EC", short: "Cosmetics", color: "#df96c1", bg: "#59627f" },
-  { id: "raid_wild_cards", name: "Raid Wild Cards", symbol: "RWC", short: "RWC", color: "#ca91da", bg: "#59627f" },
+  { id: "event_cosmetics", name: "Event Cosmetics", symbol: "EC", short: "Event Cosmetics", color: "#df96c1", bg: "#59627f" },
+  { id: "raid_wild_cards", name: "Raid Wild Cards", symbol: "RWC", short: "Raid Wild Cards", color: "#ca91da", bg: "#59627f" },
 
   { id: "silver_keys", name: "Silver Keys", symbol: "SK", short: "🔑\nSilver Key", color: "#d6d6d7", bg: "#59627f", quantity: false },
   { id: "silver_locks", name: "Silver Locks", symbol: "SL", short: "🔒\nSilver Lock", color: "#d6d6d7", bg: "#59627f", quantity: false },
@@ -75,7 +75,7 @@ function makeEmptyCells() {
 
 function normalizeCell(cell) {
   return {
-    text: String(cell?.text || "").slice(0, 18),
+    text: String(cell?.text || "").slice(0, 32),
     textColor: cell?.textColor || "#ffffff",
     bgColor: cell?.bgColor || EMPTY_CELL.bgColor
   };
@@ -435,7 +435,7 @@ function buildCellFromItem(item) {
   const quantity = Math.max(1, Number(state.quantities[item.id] || 1));
 
   return {
-    text: `${quantity} ${item.short}`.trim().slice(0, 18),
+    text: `${quantity}\n${item.short}`,
     textColor: item.color,
     bgColor: item.bg
   };
