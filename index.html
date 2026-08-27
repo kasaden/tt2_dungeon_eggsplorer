@@ -63,17 +63,37 @@
         </div>
 
         <section id="summary" class="summary" hidden>
-          <h3>Rewards on this depth</h3>
-          <table class="summary-table">
+          <h3>Rewards</h3>
+
+          <div class="summary-scope">
+            <button id="scopeDepthBtn" type="button">This depth</button>
+            <button id="scopeAllBtn" type="button">All depths</button>
+          </div>
+
+          <p id="summaryEmpty" class="summary-note" hidden>Nothing mapped on this depth yet.</p>
+
+          <table id="summaryTable" class="summary-table">
             <thead>
-              <tr><th>Item</th><th>Total</th></tr>
+              <tr><th>Total</th><th>Item</th></tr>
             </thead>
             <tbody id="summaryBody"></tbody>
           </table>
+
+          <p id="summaryNote" class="summary-note" hidden>
+            Event Bundle tiles drop one event equipment and also Fire Stones and Diamonds, in amounts that vary.
+          </p>
         </section>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p class="credits">Thanks to ミケ for the pathfinding.</p>
+    <p>
+      Unofficial. Tap Titans 2 is a trademark of Game Hive Corp.
+      This site is not affiliated with or endorsed by Game Hive.
+    </p>
+  </footer>
 
   <script src="app.js"></script>
 </body>

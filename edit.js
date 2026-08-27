@@ -15,10 +15,13 @@ const ITEMS = [
   { id: "up", name: "↑UP↑", symbol: "↑", short: "↑", color: "#ffffff", bg: "#59627f", quantity: false },
   { id: "down", name: "↓DOWN↓", symbol: "↓", short: "↓", color: "#ffffff", bg: "#59627f", quantity: false },
   { id: "lock_free_tiles", name: "Lock-free Tiles", symbol: "LF", short: "🔓\nLock-free", color: "#a3d2af", bg: "#59627f", quantity: false },
+  { id: "unknown", name: "Unknown", symbol: "?", short: "❓\nUnknown", color: "#c9ccd6", bg: "#59627f", quantity: false },
+  { id: "start", name: "Start", symbol: "St", short: "🚩\nStart", color: "#ffffff", bg: "#59627f", quantity: false },
+  { id: "takes_time", name: "Takes time", symbol: "T", short: "⏳\nTakes time", color: "#c9ccd6", bg: "#59627f", quantity: false },
   { id: "other", name: "Other", symbol: "Aa", short: "", color: "#ffffff", bg: "#59627f", other: true },
 
-  { id: "fire_stones", name: "Fire Stones", symbol: "FS", short: "Fire Stones", color: "#f0a22e", bg: "#59627f" },
-  { id: "diamonds", name: "Diamonds", symbol: "Dia", short: "Diamonds", color: "#54d7ef", bg: "#59627f" },
+  { id: "fire_stones", name: "Fire Stones", symbol: "FS", short: "", icon: "🔥", color: "#f0a22e", bg: "#59627f" },
+  { id: "diamonds", name: "Diamonds", symbol: "Dia", short: "", icon: "💎", color: "#54d7ef", bg: "#59627f" },
   { id: "crafting_shards", name: "Crafting Shards", symbol: "CS", short: "Crafting Shards", color: "#dca84b", bg: "#59627f" },
   { id: "pet_eggs", name: "Pet Eggs", symbol: "Egg", short: "Pet Eggs", color: "#9dd49d", bg: "#59627f" },
   { id: "skill_points", name: "Skill Points", symbol: "SP", short: "Skill Points", color: "#e5c95b", bg: "#59627f" },
@@ -32,6 +35,8 @@ const ITEMS = [
   { id: "legendary_equipment", name: "Legendary Equipment drops", symbol: "Eq", short: "Legendary Equipment", color: "#dba34b", bg: "#59627f", quantity: false },
   { id: "mythic_equipment", name: "Mythic Equipment Drop", symbol: "Eq", short: "Mythic Equipment", color: "#b891d4", bg: "#59627f", quantity: false },
   { id: "unique_equipment", name: "Unique Equipment Drop", symbol: "Eq", short: "Unique Equipment", color: "#76cbc2", bg: "#59627f", quantity: false },
+
+  { id: "event_bundle", name: "Event Bundle", symbol: "EB", short: "Event Bundle", color: "#f0c987", bg: "#59627f", quantity: false },
 
   { id: "event_cosmetics", name: "Event Cosmetics", symbol: "EC", short: "Event Cosmetics", color: "#df96c1", bg: "#59627f" },
   { id: "raid_wild_cards", name: "Raid Wild Cards", symbol: "RWC", short: "Raid Wild Cards", color: "#ca91da", bg: "#59627f" },
@@ -433,9 +438,10 @@ function buildCellFromItem(item) {
   }
 
   const quantity = Math.max(1, Number(state.quantities[item.id] || 1));
+  const count = item.icon ? `${quantity} ${item.icon}` : quantity;
 
   return {
-    text: `${quantity}\n${item.short}`,
+    text: item.short ? `${count}\n${item.short}` : `${count}`,
     textColor: item.color,
     bgColor: item.bg
   };

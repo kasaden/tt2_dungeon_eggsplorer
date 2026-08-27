@@ -3,8 +3,24 @@
 const GRID_SIZE = 9;
 const CELL_COUNT = GRID_SIZE * GRID_SIZE;
 
-// arrows and lock-free tiles mark the path, they are not collected
-const NOT_LOOT = ["↑", "↓", "⇧", "⇩"];
+// nothing you collect: keys are loot, the locks they open are not
+const NOT_LOOT = [
+  "↑",
+  "↓",
+  "⇧",
+  "⇩",
+  "Lock",
+  "Lock-free",
+  "Unknown",
+  "Start",
+  "Takes time"
+];
+
+// those cells carry a bare icon to keep the grid readable, the table still needs the word
+const ICON_NAMES = {
+  "🔥": "Fire Stones",
+  "💎": "Diamonds"
+};
 
 const EMPTY_CELL = {
   text: "",
@@ -14,7 +30,8 @@ const EMPTY_CELL = {
 
 const state = {
   depths: [],
-  activeDepthId: null
+  activeDepthId: null,
+  summaryScope: "depth"
 };
 
 const els = {};
@@ -29,7 +46,12 @@ function cache() {
     "loadError",
     "grid",
     "summary",
-    "summaryBody"
+    "summaryTable",
+    "summaryBody",
+    "summaryNote",
+    "summaryEmpty",
+    "scopeDepthBtn",
+    "scopeAllBtn"
   ].forEach((id) => {
     els[id] = document.getElementById(id);
   });
@@ -195,17 +217,21 @@ function renderHeaderAndNav() {
   els.nextDepthBtn.disabled = index < 0 || index >= state.depths.length - 1;
 }
 
-function summarize(depth) {
+function summarize(cells) {
   const totals = new Map();
 
-  depth.cells.forEach((cell) => {
+  cells.forEach((cell) => {
     const text = cell.text.trim();
     if (!text) return;
 
-    const counted = text.match(/^(\d+)\n(.+)$/);
-    const label = (counted ? counted[2] : text).replace("\n", " ").trim();
+    const counted = text.match(/^(\d+)(?: (\S+))?(?:\n(.+))?$/);
+    const label = counted
+      ? [counted[2], counted[3] || ICON_NAMES[counted[2]]].filter(Boolean).join(" ")
+      : text.replace("\n", " ").trim();
 
-    if (NOT_LOOT.includes(text) || label.endsWith("Lock-free")) return;
+    if (!label) return;
+
+    if (NOT_LOOT.some((marker) => label.endsWith(marker))) return;
 
     totals.set(label, (totals.get(label) || 0) + (counted ? Number(counted[1]) : 1));
   });
@@ -213,23 +239,38 @@ function summarize(depth) {
   return [...totals].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }
 
-function renderSummary() {
-  const depth = activeDepth();
-  const rows = depth ? summarize(depth) : [];
+function setSummaryScope(scope) {
+  state.summaryScope = scope;
+  renderSummary();
+}
 
-  els.summary.hidden = rows.length === 0;
+function renderSummary() {
+  const showAll = state.summaryScope === "all";
+  const cells = showAll
+    ? state.depths.flatMap((depth) => depth.cells)
+    : activeDepth()?.cells || [];
+
+  const rows = summarize(cells);
+
+  els.summary.hidden = state.depths.length === 0;
+  els.scopeDepthBtn.classList.toggle("active", !showAll);
+  els.scopeAllBtn.classList.toggle("active", showAll);
+
+  els.summaryTable.hidden = rows.length === 0;
+  els.summaryEmpty.hidden = rows.length > 0;
+  els.summaryNote.hidden = !rows.some(([label]) => label === "Event Bundle");
   els.summaryBody.innerHTML = "";
 
   rows.forEach(([label, total]) => {
     const row = document.createElement("tr");
 
-    const name = document.createElement("td");
-    name.textContent = label;
-
     const count = document.createElement("td");
     count.textContent = total;
 
-    row.append(name, count);
+    const name = document.createElement("td");
+    name.textContent = label;
+
+    row.append(count, name);
     els.summaryBody.appendChild(row);
   });
 }
@@ -245,6 +286,8 @@ function bind() {
   els.prevDepthBtn.addEventListener("click", () => navigate(-1));
   els.nextDepthBtn.addEventListener("click", () => navigate(1));
   els.depthSelect.addEventListener("change", () => selectDepth(els.depthSelect.value));
+  els.scopeDepthBtn.addEventListener("click", () => setSummaryScope("depth"));
+  els.scopeAllBtn.addEventListener("click", () => setSummaryScope("all"));
 }
 
 function init() {

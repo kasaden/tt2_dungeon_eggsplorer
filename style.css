@@ -522,6 +522,28 @@ button.depth-cell:hover {
   text-align: center;
 }
 
+.site-footer {
+  padding: 16px 24px 22px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.site-footer p {
+  max-width: 820px;
+  margin: 0;
+}
+
+.site-footer p + p {
+  margin-top: 7px;
+}
+
+.site-footer .credits {
+  color: var(--text);
+  font-size: 13px;
+}
+
 .public-workspace {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 310px;
@@ -538,6 +560,23 @@ button.depth-cell:hover {
   margin: 0 0 9px;
   color: #f2dfb4;
   font-size: 15px;
+}
+
+.summary-scope {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+  margin-bottom: 9px;
+}
+
+.summary-scope button {
+  font-size: 12px;
+}
+
+.summary-scope button.active {
+  border-color: var(--gold);
+  background: var(--blue);
+  color: white;
 }
 
 .summary-table {
@@ -563,19 +602,26 @@ button.depth-cell:hover {
   letter-spacing: .09em;
 }
 
-.summary-table th:last-child,
-.summary-table td:last-child {
-  width: 80px;
+.summary-table th:first-child,
+.summary-table td:first-child {
+  width: 60px;
   text-align: right;
 }
 
-.summary-table td:last-child {
+.summary-table td:first-child {
   color: var(--gold-light);
   font-weight: 700;
 }
 
 .summary-table tr:last-child td {
   border-bottom: 0;
+}
+
+.summary-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
 }
 
 .item-other-color {
