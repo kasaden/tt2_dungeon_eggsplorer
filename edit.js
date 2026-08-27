@@ -55,6 +55,7 @@ const state = {
       .map((item) => [item.id, 1])
   ),
   otherText: "Other",
+  otherColor: "#ffffff",
   pointerDown: false,
   dragTouched: new Set()
 };
@@ -316,6 +317,24 @@ function renderItemTable() {
       });
 
       row.appendChild(input);
+
+      const color = document.createElement("input");
+      color.className = "item-other-color";
+      color.type = "color";
+      color.value = state.otherColor;
+      color.title = "Text color";
+
+      color.addEventListener("focus", () => {
+        state.selectedItemId = item.id;
+        row.classList.add("active");
+      });
+
+      color.addEventListener("input", (event) => {
+        state.otherColor = event.target.value;
+        state.selectedItemId = item.id;
+      });
+
+      row.appendChild(color);
     } else if (item.quantity !== false && !item.erase) {
       const qty = document.createElement("input");
       qty.className = "item-qty";
@@ -361,7 +380,7 @@ function buildCellFromItem(item) {
   if (item.other) {
     return {
       text: (state.otherText || "Other").trim().slice(0, 18),
-      textColor: item.color,
+      textColor: state.otherColor,
       bgColor: item.bg
     };
   }
