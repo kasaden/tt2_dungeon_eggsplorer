@@ -539,6 +539,14 @@ button.depth-cell:hover {
   margin-top: 7px;
 }
 
+.site-footer a {
+  color: var(--gold-light);
+}
+
+.site-footer a:hover {
+  color: var(--text);
+}
+
 .site-footer .credits {
   color: var(--text);
   font-size: 13px;
