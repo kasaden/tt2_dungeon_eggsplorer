@@ -2,6 +2,10 @@
 
 const GRID_SIZE = 9;
 const CELL_COUNT = GRID_SIZE * GRID_SIZE;
+
+// arrows and lock-free tiles mark the path, they are not collected
+const NOT_LOOT = ["↑", "↓", "⇧", "⇩"];
+
 const EMPTY_CELL = {
   text: "",
   textColor: "#ffffff",
@@ -22,7 +26,9 @@ function cache() {
     "prevDepthBtn",
     "nextDepthBtn",
     "loadError",
-    "grid"
+    "grid",
+    "summary",
+    "summaryBody"
   ].forEach((id) => {
     els[id] = document.getElementById(id);
   });
@@ -177,10 +183,50 @@ function renderHeaderAndNav() {
   els.nextDepthBtn.disabled = index < 0 || index >= state.depths.length - 1;
 }
 
+function summarize(depth) {
+  const totals = new Map();
+
+  depth.cells.forEach((cell) => {
+    const text = cell.text.trim();
+    if (!text) return;
+
+    const counted = text.match(/^(\d+)\n(.+)$/);
+    const label = (counted ? counted[2] : text).replace("\n", " ").trim();
+
+    if (NOT_LOOT.includes(text) || label.endsWith("Lock-free")) return;
+
+    totals.set(label, (totals.get(label) || 0) + (counted ? Number(counted[1]) : 1));
+  });
+
+  return [...totals].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+}
+
+function renderSummary() {
+  const depth = activeDepth();
+  const rows = depth ? summarize(depth) : [];
+
+  els.summary.hidden = rows.length === 0;
+  els.summaryBody.innerHTML = "";
+
+  rows.forEach(([label, total]) => {
+    const row = document.createElement("tr");
+
+    const name = document.createElement("td");
+    name.textContent = label;
+
+    const count = document.createElement("td");
+    count.textContent = total;
+
+    row.append(name, count);
+    els.summaryBody.appendChild(row);
+  });
+}
+
 function renderAll() {
   renderDepthList();
   renderHeaderAndNav();
   renderGrid();
+  renderSummary();
 }
 
 function bind() {

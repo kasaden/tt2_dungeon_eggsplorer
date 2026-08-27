@@ -38,26 +38,38 @@
 
       <div id="loadError" class="notice error-notice" hidden></div>
 
-      <div class="grid-wrap public-grid-wrap">
-        <div class="depth-board">
-          <div class="column-labels" aria-hidden="true">
-            <span></span>
-            <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span>
-            <span>F</span><span>G</span><span>H</span><span>I</span>
+      <div class="public-workspace">
+        <div class="grid-wrap public-grid-wrap">
+          <div class="depth-board">
+            <div class="column-labels" aria-hidden="true">
+              <span></span>
+              <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span>
+              <span>F</span><span>G</span><span>H</span><span>I</span>
+            </div>
+
+            <div class="board-row">
+              <div class="row-labels" aria-hidden="true">
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <span>6</span><span>7</span><span>8</span><span>9</span>
+              </div>
+              <div id="grid" class="depth-grid" aria-label="9 by 9 depth grid"></div>
+            </div>
           </div>
 
-          <div class="board-row">
-            <div class="row-labels" aria-hidden="true">
-              <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
-              <span>6</span><span>7</span><span>8</span><span>9</span>
-            </div>
-            <div id="grid" class="depth-grid" aria-label="9 by 9 depth grid"></div>
-          </div>
+          <p class="hint public-hint">
+            Pick a depth to see the path.
+          </p>
         </div>
 
-        <p class="hint public-hint">
-          Pick a depth to see the path.
-        </p>
+        <section id="summary" class="summary" hidden>
+          <h3>Rewards on this depth</h3>
+          <table class="summary-table">
+            <thead>
+              <tr><th>Item</th><th>Total</th></tr>
+            </thead>
+            <tbody id="summaryBody"></tbody>
+          </table>
+        </section>
       </div>
     </section>
   </main>
