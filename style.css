@@ -227,6 +227,22 @@ button.danger:hover {
   font-size: 24px;
 }
 
+.depth-select {
+  display: none;
+  min-width: 0;
+  flex: 1;
+  padding: 8px 11px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel-soft);
+  color: var(--text);
+  font: inherit;
+}
+
+.depth-select:hover {
+  border-color: var(--gold);
+}
+
 .depth-nav,
 .editor-actions {
   display: flex;
@@ -617,6 +633,14 @@ button.depth-cell:hover {
 
   .depth-list {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+
+  .public-page .depths-panel {
+    display: none;
+  }
+
+  .public-page .depth-select {
+    display: block;
   }
 
   .aside-actions {

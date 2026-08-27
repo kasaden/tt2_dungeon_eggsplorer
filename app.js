@@ -25,6 +25,7 @@ function cache() {
     "depthTitle",
     "prevDepthBtn",
     "nextDepthBtn",
+    "depthSelect",
     "loadError",
     "grid",
     "summary",
@@ -178,6 +179,17 @@ function renderHeaderAndNav() {
 
   els.depthTitle.textContent = depth?.name || "Depth";
 
+  els.depthSelect.innerHTML = "";
+
+  state.depths.forEach((item) => {
+    const option = document.createElement("option");
+    option.value = item.id;
+    option.textContent = item.name;
+    els.depthSelect.appendChild(option);
+  });
+
+  els.depthSelect.value = state.activeDepthId;
+
   const index = state.depths.findIndex((item) => item.id === state.activeDepthId);
   els.prevDepthBtn.disabled = index <= 0;
   els.nextDepthBtn.disabled = index < 0 || index >= state.depths.length - 1;
@@ -232,6 +244,7 @@ function renderAll() {
 function bind() {
   els.prevDepthBtn.addEventListener("click", () => navigate(-1));
   els.nextDepthBtn.addEventListener("click", () => navigate(1));
+  els.depthSelect.addEventListener("change", () => selectDepth(els.depthSelect.value));
 }
 
 function init() {
