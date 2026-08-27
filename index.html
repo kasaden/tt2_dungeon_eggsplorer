@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Community Dungeon Eggsplorer depth maps for Tap Titans 2." />
+  <title>Eggsplorer Depths</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="public-page">
+  <header class="topbar">
+    <div>
+      <h1>Eggsplorer Depths</h1>
+      <p>Dungeon Eggsplorer maps for Tap Titans 2.</p>
+    </div>
+    <span class="status-pill">Community Viewer</span>
+  </header>
+
+  <main class="public-layout">
+    <aside class="depths-panel">
+      <div class="panel-title">
+        <h2>Depths</h2>
+      </div>
+      <div id="depthList" class="depth-list"></div>
+    </aside>
+
+    <section class="viewer">
+      <div class="viewer-heading">
+        <div>
+          <p class="eyebrow">Current depth</p>
+          <h2 id="depthTitle">Loading...</h2>
+        </div>
+        <div class="depth-nav">
+          <button id="prevDepthBtn" type="button">← Previous</button>
+          <button id="nextDepthBtn" type="button">Next →</button>
+        </div>
+      </div>
+
+      <div id="loadError" class="notice error-notice" hidden></div>
+
+      <div class="grid-wrap public-grid-wrap">
+        <div class="depth-board">
+          <div class="column-labels" aria-hidden="true">
+            <span></span>
+            <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span>
+            <span>F</span><span>G</span><span>H</span><span>I</span>
+          </div>
+
+          <div class="board-row">
+            <div class="row-labels" aria-hidden="true">
+              <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+              <span>6</span><span>7</span><span>8</span><span>9</span>
+            </div>
+            <div id="grid" class="depth-grid" aria-label="9 by 9 depth grid"></div>
+          </div>
+        </div>
+
+        <p class="hint public-hint">
+          Pick a depth to see the path.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

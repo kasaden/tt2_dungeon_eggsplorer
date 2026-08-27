@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eggsplorer Depths Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="edit-page">
+  <header class="topbar">
+    <h1>Eggsplorer Depths Editor</h1>
+    <div class="topbar-status">
+      <span id="saveState" class="status-pill">Loading</span>
+    </div>
+  </header>
+
+  <main class="app">
+    <aside class="depths-panel">
+      <div class="panel-title">
+        <h2>Depths</h2>
+        <button id="newDepthBtn" class="small-button primary">+ New</button>
+      </div>
+
+      <div id="depthList" class="depth-list"></div>
+
+      <div class="aside-actions">
+        <button id="duplicateDepthBtn">Duplicate</button>
+        <button id="renameDepthBtn">Rename</button>
+        <button id="deleteDepthBtn" class="danger">Delete</button>
+      </div>
+    </aside>
+
+    <section class="editor">
+      <div class="editor-heading">
+        <div>
+          <p class="eyebrow">Editing</p>
+          <h2 id="depthTitle">Depth 1</h2>
+        </div>
+
+        <div class="editor-actions">
+          <button id="clearDepthBtn">Clear</button>
+        </div>
+      </div>
+
+      <div class="workspace">
+        <div class="grid-wrap">
+          <div class="depth-board">
+            <div class="column-labels" aria-hidden="true">
+              <span></span>
+              <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span>
+              <span>F</span><span>G</span><span>H</span><span>I</span>
+            </div>
+
+            <div class="board-row">
+              <div class="row-labels" aria-hidden="true">
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                <span>6</span><span>7</span><span>8</span><span>9</span>
+              </div>
+              <div id="grid" class="depth-grid" aria-label="9 by 9 depth editor"></div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="items-panel">
+          <h3>Items</h3>
+          <div class="item-table-head">
+            <span>Item</span>
+            <span>Qty</span>
+          </div>
+
+          <div id="itemTable" class="item-table"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="edit.js"></script>
+</body>
+</html>
