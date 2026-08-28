@@ -112,6 +112,11 @@ at the root. Pushing `depths.json` updates the maps.
 `index.html` holds two absolute URLs, `og:url` and `og:image`, used by Discord and the like to
 build a link preview. Fix both if the address ever changes; a relative path will not do.
 
+## License
+
+The code is MIT, see `LICENSE`. The maps in `depths.json` are not covered by it: they come from
+the community spreadsheet linked above and belong to the people credited below.
+
 ## Credits
 
 Thanks to rawrzcookie and ミケ for the spreadsheet, and to Maxxximka and Leo for the data.
