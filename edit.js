@@ -39,6 +39,7 @@ const ITEMS = [
   { id: "event_bundle", name: "Event Bundle", symbol: "EB", short: "Event Bundle", color: "#f0c987", bg: "#59627f", quantity: false },
 
   { id: "event_cosmetics", name: "Event Cosmetics", symbol: "EC", short: "Event Cosmetics", color: "#df96c1", bg: "#59627f" },
+  { id: "raid_card_fragments", name: "Raid Card Fragments", symbol: "RCF", short: "Card Fragments", color: "#d0b6ea", bg: "#59627f" },
   { id: "raid_wild_cards", name: "Raid Wild Cards", symbol: "RWC", short: "Raid Wild Cards", color: "#ca91da", bg: "#59627f" },
 
   { id: "silver_keys", name: "Silver Keys", symbol: "SK", short: "🔑\nSilver Key", color: "#d6d6d7", bg: "#59627f", quantity: false },
