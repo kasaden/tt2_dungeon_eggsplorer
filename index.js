@@ -16,6 +16,9 @@ const NOT_LOOT = [
   "Takes time"
 ];
 
+// you land on the arrow up coming from the depth above, you never walk onto it
+const ENTRY_TILES = ["↑", "⇧"];
+
 // those cells carry a bare icon to keep the grid readable, the table still needs the word
 const ICON_NAMES = {
   "🔥": "Fire Stones",
@@ -40,6 +43,7 @@ function cache() {
   [
     "depthList",
     "depthTitle",
+    "tileCount",
     "prevDepthBtn",
     "nextDepthBtn",
     "depthSelect",
@@ -133,9 +137,26 @@ function buildGrid() {
   }
 }
 
+function countTiles(cells) {
+  return cells.filter((cell) => {
+    const text = cell.text.trim();
+    return text && !ENTRY_TILES.includes(text);
+  }).length;
+}
+
+function renderTileCount() {
+  const depth = activeDepth();
+  const total = depth ? countTiles(depth.cells) : 0;
+
+  els.tileCount.hidden = !depth;
+  els.tileCount.textContent = `${total} ${total === 1 ? "tile" : "tiles"}`;
+}
+
 function renderGrid() {
   const depth = activeDepth();
   const cells = [...els.grid.querySelectorAll(".depth-cell")];
+
+  renderTileCount();
 
   const depthCells = depth?.cells || Array.from({ length: CELL_COUNT }, () => EMPTY_CELL);
 

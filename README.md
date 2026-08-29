@@ -28,6 +28,9 @@ The table beside the grid totals the rewards, either for the depth on screen or 
 dungeon. Locks and the markers above are left out of it: you spend keys on locks, you do not
 collect them.
 
+The count next to the depth name is how many tiles the depth holds. The `↑` does not count:
+you land on it coming from the depth above, you never walk onto it.
+
 Add `?depth=<id>` to the URL to link a single depth.
 
 ## Editing the maps

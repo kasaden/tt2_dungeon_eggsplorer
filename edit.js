@@ -4,6 +4,9 @@ const GRID_SIZE = 9;
 const CELL_COUNT = GRID_SIZE * GRID_SIZE;
 const DEPTHS_ENDPOINT = "api/depths";
 
+// you land on the arrow up coming from the depth above, you never walk onto it
+const ENTRY_TILES = ["↑", "⇧"];
+
 const EMPTY_CELL = {
   text: "",
   textColor: "#ffffff",
@@ -223,8 +226,24 @@ function buildGrid() {
   }
 }
 
+function countTiles(cells) {
+  return cells.filter((cell) => {
+    const text = cell.text.trim();
+    return text && !ENTRY_TILES.includes(text);
+  }).length;
+}
+
+function renderTileCount() {
+  const depth = activeDepth();
+  const total = depth ? countTiles(depth.cells) : 0;
+
+  els.tileCount.hidden = !depth;
+  els.tileCount.textContent = `${total} ${total === 1 ? "tile" : "tiles"}`;
+}
+
 function renderGrid() {
   const depth = activeDepth();
+  renderTileCount();
   if (!depth) return;
 
   const cells = [...els.grid.querySelectorAll(".depth-cell")];
@@ -551,6 +570,7 @@ function cache() {
     "saveState",
     "depthList",
     "depthTitle",
+    "tileCount",
     "newDepthBtn",
     "duplicateDepthBtn",
     "renameDepthBtn",
