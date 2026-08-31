@@ -19,6 +19,9 @@ const NOT_LOOT = [
 // you land on the arrow up coming from the depth above, you never walk onto it
 const ENTRY_TILES = ["↑", "⇧"];
 
+// the ❓ tile is drawn as a carved stone block, the way the game shows it
+const UNKNOWN_TILE = "❓\nUnknown";
+
 // those cells carry a bare icon to keep the grid readable, the table still needs the word
 const ICON_NAMES = {
   "🔥": "Fire Stones",
@@ -168,6 +171,7 @@ function renderGrid() {
     el.style.backgroundColor = cell.bgColor || EMPTY_CELL.bgColor;
     el.style.color = cell.textColor || EMPTY_CELL.textColor;
     el.classList.toggle("active-cell", Boolean(cell.text));
+    el.classList.toggle("unknown-cell", cell.text === UNKNOWN_TILE);
 
     const row = Math.floor(index / GRID_SIZE) + 1;
     const column = String.fromCharCode(65 + (index % GRID_SIZE));
@@ -178,6 +182,16 @@ function renderGrid() {
       arrow.className = "arrow";
       arrow.textContent = cell.text;
       el.replaceChildren(arrow);
+    }
+
+    if (cell.text === UNKNOWN_TILE) {
+      const mark = document.createElement("span");
+      mark.className = "unknown";
+      mark.textContent = "?";
+      el.replaceChildren(mark);
+      // the stone comes from the stylesheet, the painted colours would cover it
+      el.style.backgroundColor = "";
+      el.style.color = "";
     }
   });
 }

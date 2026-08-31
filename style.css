@@ -399,6 +399,29 @@ button.depth-cell:hover {
   font-size: clamp(16px, 5vw, 34px);
 }
 
+/* the ❓ tile: a stone block with the mark carved into it, as the game draws it */
+.depth-cell.unknown-cell {
+  background: linear-gradient(155deg, #2f3441 0%, #272b37 48%, #1c2029 100%);
+  box-shadow:
+    inset 0 0 0 1px #13151c,
+    inset 2px 2px 0 -1px rgba(255, 255, 255, 0.11),
+    inset -2px -2px 0 -1px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 4px #2a2e3a,
+    inset 6px 6px 7px -4px rgba(255, 255, 255, 0.09),
+    inset -6px -6px 9px -4px rgba(0, 0, 0, 0.75);
+}
+
+/* dark fill with the light edge underneath, so the mark reads as sunken */
+.depth-cell .unknown {
+  color: #171a23;
+  font-size: clamp(18px, 5.6vw, 38px);
+  font-weight: 900;
+  line-height: 1;
+  text-shadow:
+    0 1.5px 0 rgba(255, 255, 255, 0.22),
+    0 -1px 0 rgba(0, 0, 0, 0.8);
+}
+
 .hint {
   width: min(760px, 100%);
   margin: 9px auto 0;
