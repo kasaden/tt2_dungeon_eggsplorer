@@ -462,6 +462,33 @@ button.depth-cell:hover {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
+/* the 🔥 and 💎 tiles: the emoji fills the tile and the count sits across its foot */
+.depth-cell .icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: clamp(18px, 6.2vw, 42px);
+  line-height: 1;
+  transform: translateY(-6%);
+}
+
+/* white on a dark ring, so the count reads over the brightest part of the icon */
+.depth-cell .qty {
+  position: absolute;
+  right: 12%;
+  bottom: 6%;
+  color: #ffffff;
+  font-size: clamp(9px, 2.6vw, 17px);
+  font-weight: 900;
+  line-height: 1;
+  text-shadow:
+    -1.2px -1.2px 0 #241021, 1.2px -1.2px 0 #241021,
+    -1.2px 1.2px 0 #241021, 1.2px 1.2px 0 #241021,
+    0 -1.2px 0 #241021, 0 1.2px 0 #241021,
+    -1.2px 0 0 #241021, 1.2px 0 0 #241021;
+}
+
 .hint {
   width: min(760px, 100%);
   margin: 9px auto 0;

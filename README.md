@@ -26,7 +26,8 @@ with the amount on the first line.
 
 Those last three are drawn rather than written, the way the game shows them, so the tile carries
 no label; hover it to read the name. Lock-free and Takes time are the same door, once shut and
-once shut behind bars, because the second one is the first with a wait in front of it.
+once shut behind bars, because the second one is the first with a wait in front of it. Fire
+Stones and Diamonds are drawn too: the icon fills the tile and the amount sits across its foot.
 
 The table beside the grid totals the rewards, either for the depth on screen or for the whole
 dungeon. Locks and the markers above are left out of it: you spend keys on locks, you do not
@@ -112,6 +113,10 @@ Three places to know:
   All three have to agree.
 - **What is excluded from the totals** is `NOT_LOOT` in `index.js`, matched on the end of a
   label. `ICON_NAMES` next to it gives a name to cells that carry only an icon.
+- **The drawn tiles** are matched on their text in both `renderGrid`, against `UNKNOWN_TILE`,
+  `LOCK_FREE_TILE`, `TAKES_TIME_TILE` and `ICON_TILE`, the last one covering any `<amount>
+  <icon>` cell. The art itself is in `style.css`, in plain CSS; the flame and the gem are the
+  `🔥` and `💎` emoji blown up, so they follow whatever the reader's system draws for them.
 
 ## Publishing
 

@@ -24,6 +24,8 @@ const UNKNOWN_TILE = "❓\nUnknown";
 // Lock-free and Takes time are one gate in two states, shut and shut behind bars
 const LOCK_FREE_TILE = "🔓\nLock-free";
 const TAKES_TIME_TILE = "⏳\nTakes time";
+// "9 🔥" and "5 💎" are drawn: the icon fills the tile, the count sits across its foot
+const ICON_TILE = /^(\d+) (🔥|💎)$/u;
 
 // those cells carry a bare icon to keep the grid readable, the table still needs the word
 const ICON_NAMES = {
@@ -201,6 +203,20 @@ function renderGrid() {
       const gate = document.createElement("span");
       gate.className = cell.text === TAKES_TIME_TILE ? "gate barred" : "gate";
       el.replaceChildren(gate);
+      el.style.color = "";
+    }
+
+    const loot = cell.text.match(ICON_TILE);
+    if (loot) {
+      const icon = document.createElement("span");
+      icon.className = "icon";
+      icon.textContent = loot[2];
+
+      const qty = document.createElement("span");
+      qty.className = "qty";
+      qty.textContent = loot[1];
+
+      el.replaceChildren(icon, qty);
       el.style.color = "";
     }
   });
