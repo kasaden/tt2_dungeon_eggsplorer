@@ -42,8 +42,10 @@ node server.js
 ```
 
 Then open <http://127.0.0.1:4173/edit.html>. Pick an item in the palette, set a quantity if it
-takes one, then click or drag on the grid. Saves happen on their own a moment after each change;
-the pill at the top right goes red if one fails. Commit and push `depths.json` to publish.
+takes one, then click or drag on the grid. The right button erases, drag included, so you do not
+have to reach for the Erase item to clear a few tiles. Saves happen on their own a moment after
+each change; the pill at the top right goes red if one fails. Commit and push `depths.json` to
+publish.
 
 Two things to know:
 

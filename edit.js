@@ -54,6 +54,8 @@ const ITEMS = [
 
 ];
 
+const ERASE_ITEM = ITEMS.find((item) => item.erase);
+
 const state = {
   depths: [],
   activeDepthId: null,
@@ -69,6 +71,7 @@ const state = {
     ITEMS.filter((item) => item.special).map((item) => [item.id, ""])
   ),
   pointerDown: false,
+  pointerErase: false,
   dragTouched: new Set()
 };
 
@@ -199,10 +202,11 @@ function buildGrid() {
     cell.dataset.index = i;
 
     cell.addEventListener("pointerdown", (event) => {
-      if (event.button !== 0) return;
+      if (event.button !== 0 && event.button !== 2) return;
       event.preventDefault();
 
       state.pointerDown = true;
+      state.pointerErase = event.button === 2;
       state.dragTouched.clear();
       applySelectedItem(i);
 
@@ -210,6 +214,7 @@ function buildGrid() {
         "pointerup",
         () => {
           state.pointerDown = false;
+          state.pointerErase = false;
           state.dragTouched.clear();
         },
         { once: true }
@@ -217,10 +222,14 @@ function buildGrid() {
     });
 
     cell.addEventListener("pointerenter", (event) => {
-      if (state.pointerDown && event.buttons === 1) {
+      // 1 is the left button, 2 the right one, and a drag has to stay on the one it started with
+      if (state.pointerDown && (event.buttons & (state.pointerErase ? 2 : 1))) {
         applySelectedItem(i);
       }
     });
+
+    // the right button paints, it does not open the browser menu
+    cell.addEventListener("contextmenu", (event) => event.preventDefault());
 
     els.grid.appendChild(cell);
   }
@@ -474,7 +483,7 @@ function applySelectedItem(index) {
   const depth = activeDepth();
   if (!depth) return;
 
-  depth.cells[index] = buildCellFromItem(selectedItem());
+  depth.cells[index] = buildCellFromItem(state.pointerErase ? ERASE_ITEM : selectedItem());
   scheduleSave();
   renderGrid();
 }
