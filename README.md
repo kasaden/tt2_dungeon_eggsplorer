@@ -19,10 +19,14 @@ with the amount on the first line.
 | `🚩` Start | Where the event begins, on depth 1 only |
 | `🔒` Silver / Gold / named Lock | Blocked, needs the matching key |
 | `🔑` Silver / Gold / named Key | Opens the matching lock |
-| `🔓` Lock-free | Tile with no lock on it |
-| `❓` Unknown | Behind a lock nobody has opened yet, contents unknown |
-| `⏳` Takes time | Time-gated by the game, there is no way through it yet and it opens later |
+| A shut door | Lock-free, a tile with no lock on it |
+| A shut door behind bars | Takes time, the game opens it a few days later |
+| A stone block with a `?` carved in | Unknown, behind a lock nobody has opened yet |
 | Event Bundle | One event equipment plus Fire Stones and Diamonds, amounts vary |
+
+Those last three are drawn rather than written, the way the game shows them, so the tile carries
+no label; hover it to read the name. Lock-free and Takes time are the same door, once shut and
+once shut behind bars, because the second one is the first with a wait in front of it.
 
 The table beside the grid totals the rewards, either for the depth on screen or for the whole
 dungeon. Locks and the markers above are left out of it: you spend keys on locks, you do not

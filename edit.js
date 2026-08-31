@@ -9,6 +9,9 @@ const ENTRY_TILES = ["↑", "⇧"];
 
 // the ❓ tile is drawn as a carved stone block, the way the game shows it
 const UNKNOWN_TILE = "❓\nUnknown";
+// Lock-free and Takes time are one gate in two states, shut and shut behind bars
+const LOCK_FREE_TILE = "🔓\nLock-free";
+const TAKES_TIME_TILE = "⏳\nTakes time";
 
 const EMPTY_CELL = {
   text: "",
@@ -288,6 +291,13 @@ function renderGrid() {
       el.replaceChildren(mark);
       // the stone comes from the stylesheet, the painted colours would cover it
       el.style.backgroundColor = "";
+      el.style.color = "";
+    }
+
+    if (cell.text === LOCK_FREE_TILE || cell.text === TAKES_TIME_TILE) {
+      const gate = document.createElement("span");
+      gate.className = cell.text === TAKES_TIME_TILE ? "gate barred" : "gate";
+      el.replaceChildren(gate);
       el.style.color = "";
     }
   });
