@@ -33,8 +33,8 @@ The table beside the grid totals the rewards, either for the depth on screen or 
 dungeon. Locks and the markers above are left out of it: you spend keys on locks, you do not
 collect them.
 
-The count next to the depth name is how many tiles the depth holds. The `↑` does not count:
-you land on it coming from the depth above, you never walk onto it.
+The count next to the depth name is how many tiles the depth holds. The `↑` and `🚩` Start do not
+count: you land on them, coming from the depth above or starting the run, you never walk onto them.
 
 Add `?depth=<id>` to the URL to link a single depth, and `&cell=D6` to open it on one tile.
 
@@ -52,8 +52,9 @@ coordinate to go there with that tile ringed in gold for a few seconds. So the q
 Skill Points, where do I go" is two clicks.
 
 The counts at the top are Depths, Mapped tiles, Reward tiles, Items, Keys, Locks and Unknown.
-Mapped tiles is every tile of every depth, the `↑` left out, the same count the depth headings
-show. Reward tiles is the part of them that drops something, so keys are in it and locks are not.
+Mapped tiles is every tile of every depth, the `↑` and Start left out, the same count the depth
+headings show. Reward tiles is the part of them that drops something, so keys are in it and locks
+are not.
 
 Add `?depth=overview` to link the page.
 
