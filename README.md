@@ -36,7 +36,26 @@ collect them.
 The count next to the depth name is how many tiles the depth holds. The `↑` does not count:
 you land on it coming from the depth above, you never walk onto it.
 
-Add `?depth=<id>` to the URL to link a single depth.
+Add `?depth=<id>` to the URL to link a single depth, and `&cell=D6` to open it on one tile.
+
+## The Overview
+
+`Overview` sits at the top of the depth list, ahead of `Depth 1`, and is where the site opens.
+It reads the whole dungeon at once: a row of counts, then every item the dungeon holds with two
+numbers side by side.
+
+**Total** is how much you collect. **Tiles** is how many tiles you have to walk on to collect it.
+They are not the same number: 500 Perk Tickets sit on 25 tiles, while 27 Skill Points sit on 27.
+
+Open an item and its tiles appear grouped by depth. Click a depth name to go there, or click a
+coordinate to go there with that tile ringed in gold for a few seconds. So the question "I want
+Skill Points, where do I go" is two clicks.
+
+The counts at the top are Depths, Mapped tiles, Reward tiles, Items, Keys, Locks and Unknown.
+Mapped tiles is every tile of every depth, the `↑` left out, the same count the depth headings
+show. Reward tiles is the part of them that drops something, so keys are in it and locks are not.
+
+Add `?depth=overview` to link the page.
 
 ## Editing the maps
 
@@ -113,6 +132,12 @@ Three places to know:
   All three have to agree.
 - **What is excluded from the totals** is `NOT_LOOT` in `index.js`, matched on the end of a
   label. `ICON_NAMES` next to it gives a name to cells that carry only an icon.
+- **Reading a cell** happens in one place, `tileParts` in `index.js`, which turns the text into
+  `{ label, quantity }`. `collectLoot` runs it over every depth and returns one entry per item,
+  `{ label, total, tileCount, locations }`, where each location carries its depth, its cell index
+  and its `A1` to `I9` coordinate. The Overview counts, the Overview tile lists and the reward
+  table beside the grid all read that, so an item added to a depth shows up everywhere at once
+  with nothing else to edit.
 - **The drawn tiles** are matched on their text in both `renderGrid`, against `UNKNOWN_TILE`,
   `LOCK_FREE_TILE`, `TAKES_TIME_TILE` and `ICON_TILE`, the last one covering any `<amount>
   <icon>` cell. The art itself is in `style.css`, in plain CSS; the flame and the gem are the

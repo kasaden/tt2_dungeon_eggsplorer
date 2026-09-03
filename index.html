@@ -30,7 +30,7 @@
   <main class="public-layout">
     <aside class="depths-panel">
       <div class="panel-title">
-        <h2>Depths</h2>
+        <h2>Resume</h2>
       </div>
       <div id="depthList" class="depth-list"></div>
     </aside>
@@ -38,7 +38,7 @@
     <section class="viewer">
       <div class="viewer-heading">
         <div>
-          <p class="eyebrow">Current depth</p>
+          <p id="viewEyebrow" class="eyebrow">Current depth</p>
           <div class="depth-heading">
             <h2 id="depthTitle">Loading...</h2>
             <span id="tileCount" class="tile-count" title="Tiles on this depth, the arrow up left out" hidden></span>
@@ -53,7 +53,7 @@
 
       <div id="loadError" class="notice error-notice" hidden></div>
 
-      <div class="public-workspace">
+      <div id="workspace" class="public-workspace">
         <div class="grid-wrap public-grid-wrap">
           <div class="depth-board">
             <div class="column-labels" aria-hidden="true">
@@ -98,6 +98,27 @@
           </p>
         </section>
       </div>
+
+      <section id="overview" class="overview" hidden>
+        <div id="overviewStats" class="overview-stats"></div>
+
+        <h3>Everything the dungeon holds</h3>
+        <p class="summary-note overview-lede">
+          Totals for all depths at once. Open an item to see every tile it sits on, then click a
+          coordinate to jump to that depth with the tile highlighted.
+        </p>
+
+        <div class="loot-head-row" aria-hidden="true">
+          <span>Total</span><span>Item</span><span>Tiles</span><span></span>
+        </div>
+
+        <div id="lootList" class="loot-list"></div>
+
+        <p class="summary-note">
+          Event Bundle tiles drop one event equipment and also Fire Stones and Diamonds, in amounts
+          that vary. Locks are left out of the totals: you spend keys on them, you do not collect them.
+        </p>
+      </section>
     </section>
   </main>
 

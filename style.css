@@ -29,6 +29,11 @@
   box-sizing: border-box;
 }
 
+/* our own display rules would otherwise beat the browser's [hidden] */
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -732,6 +737,221 @@ button.depth-cell:hover {
   line-height: 1.45;
 }
 
+/* Overview */
+
+.overview {
+  width: min(1100px, 100%);
+}
+
+.overview h3 {
+  margin: 0 0 8px;
+  color: #f2dfb4;
+  font-size: 15px;
+}
+
+.overview-lede {
+  margin: 0 0 16px;
+  max-width: 640px;
+}
+
+.overview-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.stat {
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  background: var(--panel);
+}
+
+.stat-value {
+  display: block;
+  color: var(--gold-light);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.stat-label {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+
+.loot-list {
+  display: grid;
+  gap: 4px;
+}
+
+.loot-head-row,
+.loot-head {
+  display: grid;
+  grid-template-columns: 62px minmax(0, 1fr) auto 20px;
+  gap: 10px;
+  align-items: center;
+  text-align: left;
+}
+
+.loot-head-row {
+  padding: 0 11px 6px;
+  border-bottom: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+
+.loot-head-row span:first-child {
+  text-align: right;
+}
+
+.loot-head {
+  width: 100%;
+  padding: 9px 11px;
+  border-radius: 0;
+  background: var(--panel);
+  font-size: 13px;
+}
+
+.loot-head:hover {
+  background: #2f364b;
+}
+
+.loot-row.open .loot-head {
+  border-color: var(--gold);
+  background: var(--blue);
+}
+
+.loot-total {
+  color: var(--gold-light);
+  font-weight: 700;
+  text-align: right;
+}
+
+.loot-name {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.loot-tiles {
+  color: var(--muted);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.loot-row.open .loot-tiles {
+  color: #d8dae4;
+}
+
+.loot-chevron {
+  color: var(--gold);
+  font-size: 11px;
+  text-align: center;
+  transition: transform .12s ease;
+}
+
+.loot-row.open .loot-chevron {
+  transform: rotate(90deg);
+}
+
+.loot-places {
+  display: grid;
+  gap: 10px;
+  padding: 12px 11px 14px;
+  border: 1px solid var(--border);
+  border-top: 0;
+  background: #232838;
+}
+
+.place-group {
+  display: grid;
+  grid-template-columns: minmax(0, 124px) minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+}
+
+.place-depth {
+  padding: 4px 6px;
+  border-color: transparent;
+  background: transparent;
+  color: var(--gold-light);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.place-depth:hover {
+  border-color: var(--gold);
+  background: #2d3448;
+}
+
+.place-cells {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 3px;
+}
+
+.place {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 4px 8px;
+  border-color: #4a5470;
+  background: #2d3347;
+  font-size: 12px;
+}
+
+.place:hover {
+  border-color: var(--gold);
+  background: var(--blue);
+}
+
+.place-coord {
+  font-weight: 700;
+}
+
+.place-qty {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.place:hover .place-qty {
+  color: #f0e6cd;
+}
+
+/* the tile the Overview sent you to, lit for a few seconds */
+.depth-cell.cell-target::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  outline: 3px solid var(--gold-light);
+  outline-offset: -3px;
+  pointer-events: none;
+  animation: cell-target-pulse 1.1s ease-in-out infinite;
+}
+
+@keyframes cell-target-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .2; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .depth-cell.cell-target::after {
+    animation: none;
+  }
+}
+
 .item-other-color {
   width: 100%;
   height: 34px;
@@ -841,6 +1061,42 @@ button.depth-cell:hover {
   .viewer-heading h2,
   .editor-heading h2 {
     font-size: 20px;
+  }
+
+  .overview-stats {
+    grid-template-columns: repeat(auto-fit, minmax(94px, 1fr));
+    gap: 6px;
+  }
+
+  .stat {
+    padding: 9px 10px;
+  }
+
+  .stat-value {
+    font-size: 19px;
+  }
+
+  .loot-head-row,
+  .loot-head {
+    grid-template-columns: 48px minmax(0, 1fr) auto 16px;
+    gap: 7px;
+  }
+
+  .loot-tiles {
+    font-size: 10px;
+  }
+
+  .place-group {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+
+  .place-depth {
+    padding: 2px 4px;
+  }
+
+  .place-cells {
+    padding-top: 0;
   }
 }
 
