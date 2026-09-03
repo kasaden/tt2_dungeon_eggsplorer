@@ -4,8 +4,8 @@ const GRID_SIZE = 9;
 const CELL_COUNT = GRID_SIZE * GRID_SIZE;
 const DEPTHS_ENDPOINT = "api/depths";
 
-// you land on the arrow up coming from the depth above, you never walk onto it
-const ENTRY_TILES = ["↑", "⇧"];
+// where you land rather than walk: the arrow up from the depth above, and the start of the run
+const ENTRY_TILES = ["↑", "⇧", "🚩\nStart"];
 
 // the ❓ tile is drawn as a carved stone block, the way the game shows it
 const UNKNOWN_TILE = "❓\nUnknown";
