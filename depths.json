@@ -3716,19 +3716,19 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#ffffff",
+          "text": "Legendary Equipment",
+          "textColor": "#dba34b",
           "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "Legendary Equipment",
+          "textColor": "#dba34b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "Legendary Equipment",
+          "textColor": "#dba34b",
+          "bgColor": "#59627f"
         },
         {
           "text": "",
@@ -4066,8 +4066,8 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#ffffff",
+          "text": "Unique Equipment",
+          "textColor": "#76cbc2",
           "bgColor": "#59627f"
         },
         {
@@ -5761,73 +5761,48 @@
       "name": "Depth 15",
       "cells": [
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#ffffff",
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
           "bgColor": "#59627f"
         },
         {
@@ -5836,14 +5811,39 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
         },
         {
           "text": "",
@@ -13986,8 +13986,8 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "↓",
+          "textColor": "#ffffff",
           "bgColor": "#59627f"
         },
         {
@@ -14001,38 +14001,18 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "5\nCrafting Shards",
+          "textColor": "#dca84b",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "🔑\nSilver Key",
+          "textColor": "#d6d6d7",
           "bgColor": "#59627f"
         },
         {
@@ -14046,23 +14026,13 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "5 💎",
+          "textColor": "#54d7ef",
           "bgColor": "#59627f"
         },
         {
@@ -14076,38 +14046,23 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "20\nCard Fragments",
+          "textColor": "#d0b6ea",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "20\nCard Fragments",
+          "textColor": "#d0b6ea",
           "bgColor": "#59627f"
         },
         {
-          "text": "",
-          "textColor": "#ffffff",
-          "bgColor": "#34363c"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "1\nSkill Points",
+          "textColor": "#e5c95b",
           "bgColor": "#59627f"
         },
         {
@@ -14116,58 +14071,18 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
@@ -14176,8 +14091,23 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
@@ -14186,8 +14116,58 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
@@ -14196,13 +14176,8 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
@@ -14211,43 +14186,8 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "⏳\nTakes time",
-          "textColor": "#c9ccd6",
-          "bgColor": "#59627f"
-        },
-        {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
@@ -14256,28 +14196,88 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
           "bgColor": "#59627f"
         },
         {
@@ -14301,8 +14301,8 @@
           "bgColor": "#34363c"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "5\nPet Eggs",
+          "textColor": "#9dd49d",
           "bgColor": "#59627f"
         },
         {
@@ -14341,23 +14341,23 @@
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "3\nPet Eggs",
+          "textColor": "#9dd49d",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "10\nCard Fragments",
+          "textColor": "#d0b6ea",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "9 🔥",
+          "textColor": "#f0a22e",
           "bgColor": "#59627f"
         },
         {
-          "text": "❓\nUnknown",
-          "textColor": "#c9ccd6",
+          "text": "🔑\nEmerald Key",
+          "textColor": "#b69bd5",
           "bgColor": "#59627f"
         },
         {
@@ -14379,6 +14379,2472 @@
           "text": "9 🔥",
           "textColor": "#f0a22e",
           "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        }
+      ]
+    },
+    {
+      "id": "depth-1788425602905-4es2qj",
+      "name": "Depth 36",
+      "cells": [
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔑\nSilver Key",
+          "textColor": "#d6d6d7",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "1\nPet Eggs",
+          "textColor": "#9dd49d",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCrafting Shards",
+          "textColor": "#dca84b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔒\nSilver Lock",
+          "textColor": "#d6d6d7",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔒\nSilver Lock",
+          "textColor": "#d6d6d7",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "🔑\nGold Key",
+          "textColor": "#dfb654",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔒\nSilver Lock",
+          "textColor": "#d6d6d7",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "🔒\nSilver Lock",
+          "textColor": "#d6d6d7",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "50 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "↓",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "↑",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        }
+      ]
+    },
+    {
+      "id": "depth-1788425712963-5ve0g1",
+      "name": "Depth 37",
+      "cells": [
+        {
+          "text": "Legendary Equipment",
+          "textColor": "#dba34b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔒\nGold Lock",
+          "textColor": "#dfb654",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "Legendary Equipment",
+          "textColor": "#dba34b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "↓",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "Rare Equipment",
+          "textColor": "#80aee0",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "1\nSkill Points",
+          "textColor": "#e5c95b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "↑",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        }
+      ]
+    },
+    {
+      "id": "depth-1788425938322-9g1u8d",
+      "name": "Depth 38",
+      "cells": [
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "↓",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nCrafting Shards",
+          "textColor": "#dca84b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "3\nPet Eggs",
+          "textColor": "#9dd49d",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "Rare Equipment",
+          "textColor": "#80aee0",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "1\nSkill Points",
+          "textColor": "#e5c95b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "Rare Equipment",
+          "textColor": "#80aee0",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nPet Eggs",
+          "textColor": "#9dd49d",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔑\nMoon Key",
+          "textColor": "#b69bd5",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "↑",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        }
+      ]
+    },
+    {
+      "id": "depth-1788426054846-d0pmpx",
+      "name": "Depth 39",
+      "cells": [
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "🔑\nGold Key",
+          "textColor": "#dfb654",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "Fortune Hero Weapon",
+          "textColor": "#92bfe5",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "↓",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "Rare Equipment",
+          "textColor": "#80aee0",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCrafting Shards",
+          "textColor": "#dca84b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCard Fragments",
+          "textColor": "#d0b6ea",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "Rare Equipment",
+          "textColor": "#80aee0",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "↑",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        }
+      ]
+    },
+    {
+      "id": "depth-1788426179326-zy5z5g",
+      "name": "Depth 40",
+      "cells": [
+        {
+          "text": "↓",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔑\nRuby Key",
+          "textColor": "#b69bd5",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "Legendary Equipment",
+          "textColor": "#dba34b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nCrafting Shards",
+          "textColor": "#dca84b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "🔓\nLock-free",
+          "textColor": "#a3d2af",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "1\nSkill Points",
+          "textColor": "#e5c95b",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "↑",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "10 🔥",
+          "textColor": "#f0a22e",
+          "bgColor": "#59627f"
+        }
+      ]
+    },
+    {
+      "id": "depth-1788426341343-oelupa",
+      "name": "Depth 41",
+      "cells": [
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "Fortune Hero Scroll",
+          "textColor": "#b9a0dc",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "Fortune Hero Scroll",
+          "textColor": "#b9a0dc",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "↑",
+          "textColor": "#ffffff",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "Fortune Hero Scroll",
+          "textColor": "#b9a0dc",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5 💎",
+          "textColor": "#54d7ef",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "5\nRaid Wild Cards",
+          "textColor": "#ca91da",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "Fortune Hero Scroll",
+          "textColor": "#b9a0dc",
+          "bgColor": "#59627f"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
+        },
+        {
+          "text": "",
+          "textColor": "#ffffff",
+          "bgColor": "#34363c"
         },
         {
           "text": "",
