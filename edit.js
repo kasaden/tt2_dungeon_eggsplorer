@@ -15,6 +15,9 @@ const TAKES_TIME_TILE = "⏳\nTakes time";
 // "9 🔥" and "5 💎" are drawn: the icon fills the tile, the count sits across its foot
 const ICON_TILE = /^(\d+) (🔥|💎)$/u;
 
+// the stylesheet draws tiles painted with these two; only a hand-set colour still wins
+const DEFAULT_BGS = ["#34363c", "#59627f"];
+
 const EMPTY_CELL = {
   text: "",
   textColor: "#ffffff",
@@ -270,7 +273,7 @@ function renderGrid() {
     if (!el) return;
 
     el.textContent = cell.text || "";
-    el.style.backgroundColor = cell.bgColor || EMPTY_CELL.bgColor;
+    el.style.backgroundColor = DEFAULT_BGS.includes(cell.bgColor) ? "" : cell.bgColor;
     el.style.color = cell.textColor || EMPTY_CELL.textColor;
     el.classList.toggle("active-cell", Boolean(cell.text));
     el.classList.toggle("unknown-cell", cell.text === UNKNOWN_TILE);

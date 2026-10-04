@@ -16,38 +16,48 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="A 9 by 9 Dungeon Eggsplorer depth grid" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0e1118" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A5%9A%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500;600&family=Outfit:wght@500;600;700&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="public-page">
+  <a class="skip-link" href="#content">Skip to the map</a>
+
   <header class="topbar">
-    <div>
-      <h1>Eggsplorer Depths</h1>
-      <p>Dungeon Eggsplorer maps for Tap Titans 2.</p>
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <h1>Eggsplorer Depths</h1>
+        <p>Dungeon Eggsplorer maps for Tap Titans 2</p>
+      </div>
     </div>
-    <span class="status-pill">Community Viewer</span>
+    <a class="topbar-link" href="https://docs.google.com/spreadsheets/d/1hbrPgt0tHw-fJSjUZ6PY56TLY6uEIxX-lImWFQnKDos/edit?gid=1900671761#gid=1900671761" target="_blank" rel="noopener">Community spreadsheet</a>
   </header>
 
   <main class="public-layout">
-    <aside class="depths-panel">
+    <aside class="depths-panel" aria-label="Depths">
       <div class="panel-title">
-        <h2>Resume</h2>
+        <h2>Depths</h2>
       </div>
       <div id="depthList" class="depth-list"></div>
     </aside>
 
-    <section class="viewer">
+    <section id="content" class="viewer" tabindex="-1">
       <div class="viewer-heading">
         <div>
           <p id="viewEyebrow" class="eyebrow">Current depth</p>
           <div class="depth-heading">
-            <h2 id="depthTitle">Loading...</h2>
+            <h2 id="depthTitle">Loading…</h2>
             <span id="tileCount" class="tile-count" title="Tiles on this depth, the arrow up left out" hidden></span>
           </div>
         </div>
         <div class="depth-nav">
-          <button id="prevDepthBtn" type="button">← Previous</button>
+          <button id="prevDepthBtn" type="button" aria-label="Previous depth">← Prev</button>
           <select id="depthSelect" class="depth-select" aria-label="Depth"></select>
-          <button id="nextDepthBtn" type="button">Next →</button>
+          <button id="nextDepthBtn" type="button" aria-label="Next depth">Next →</button>
         </div>
       </div>
 
@@ -72,7 +82,7 @@
           </div>
 
           <p class="hint public-hint">
-            Pick a depth to see the path.
+            Hover a tile to read its name and coordinate.
           </p>
         </div>
 

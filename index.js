@@ -42,12 +42,18 @@ const EMPTY_CELL = {
   bgColor: "#34363c"
 };
 
+// the two backgrounds the editor paints by default: the stylesheet draws those tiles itself,
+// only a hand-set colour in depths.json still wins
+const DEFAULT_BGS = ["#34363c", "#59627f"];
+
 const state = {
   depths: [],
   activeDepthId: null,
   summaryScope: "depth",
   // every item of the dungeon, read once at load
   loot: [],
+  // item label -> the colour its tiles are painted in, for the dot next to it
+  colors: new Map(),
   openLoot: new Set(),
   target: null
 };
@@ -147,7 +153,7 @@ function collectLoot(depths) {
       let entry = found.get(parts.label);
 
       if (!entry) {
-        entry = { label: parts.label, total: 0, tileCount: 0, locations: [] };
+        entry = { label: parts.label, total: 0, tileCount: 0, color: cell.textColor, locations: [] };
         found.set(parts.label, entry);
       }
 
@@ -189,6 +195,7 @@ async function loadDepths() {
 
     state.depths = data.depths.map(normalizeDepth);
     state.loot = collectLoot(state.depths);
+    state.colors = new Map(state.loot.map((entry) => [entry.label, entry.color]));
 
     const params = new URLSearchParams(window.location.search);
     const requestedDepth = params.get("depth");
@@ -246,6 +253,8 @@ function buildGrid() {
     const cell = document.createElement("div");
     cell.className = "depth-cell readonly-cell";
     cell.dataset.index = i;
+    // column + row, the delay of the sweep that plays when a depth opens
+    cell.style.setProperty("--d", (i % GRID_SIZE) + Math.floor(i / GRID_SIZE));
     els.grid.appendChild(cell);
   }
 }
@@ -279,7 +288,7 @@ function renderGrid() {
     if (!el) return;
 
     el.textContent = cell.text || "";
-    el.style.backgroundColor = cell.bgColor || EMPTY_CELL.bgColor;
+    el.style.backgroundColor = DEFAULT_BGS.includes(cell.bgColor) ? "" : cell.bgColor;
     el.style.color = cell.textColor || EMPTY_CELL.textColor;
     el.classList.toggle("active-cell", Boolean(cell.text));
     el.classList.toggle("unknown-cell", cell.text === UNKNOWN_TILE);
@@ -336,8 +345,15 @@ function renderDepthList() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "depth-item";
-    button.textContent = view.name;
+    button.classList.toggle("overview-item", view.id === OVERVIEW_ID);
     button.classList.toggle("active", view.id === state.activeDepthId);
+
+    // the rail is an index: "Depth 12" reads as 12, the full name stays for screen readers
+    const number = view.name.match(/^Depth (\d+)$/);
+    button.textContent = number ? number[1] : view.name;
+    button.title = view.name;
+    button.setAttribute("aria-label", view.name);
+    if (view.id === state.activeDepthId) button.setAttribute("aria-current", "true");
 
     button.addEventListener("click", () => selectDepth(view.id));
     els.depthList.appendChild(button);
@@ -433,6 +449,17 @@ function summarize(cells) {
   return [...totals].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
 }
 
+function swatchFor(label) {
+  const dot = document.createElement("span");
+  dot.className = "swatch";
+  dot.setAttribute("aria-hidden", "true");
+
+  const color = state.colors.get(label);
+  if (color) dot.style.setProperty("--swatch", color);
+
+  return dot;
+}
+
 function setSummaryScope(scope) {
   state.summaryScope = scope;
   renderSummary();
@@ -462,7 +489,7 @@ function renderSummary() {
     count.textContent = total;
 
     const name = document.createElement("td");
-    name.textContent = label;
+    name.append(swatchFor(label), label);
 
     row.append(count, name);
     els.summaryBody.appendChild(row);
@@ -618,7 +645,7 @@ function renderLootList() {
 
     const name = document.createElement("span");
     name.className = "loot-name";
-    name.textContent = entry.label;
+    name.append(swatchFor(entry.label), entry.label);
 
     const tiles = document.createElement("span");
     tiles.className = "loot-tiles";
@@ -645,10 +672,18 @@ function renderOverview() {
   renderLootList();
 }
 
+// restarts the sweep: the class has to leave and come back with a reflow in between
+function playEnter() {
+  els.grid.classList.remove("enter");
+  void els.grid.offsetWidth;
+  els.grid.classList.add("enter");
+}
+
 function renderAll() {
   renderDepthList();
   renderHeaderAndNav();
   renderGrid();
+  if (!isOverview()) playEnter();
   renderSummary();
   renderOverview();
 
