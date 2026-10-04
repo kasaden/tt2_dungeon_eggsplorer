@@ -60,7 +60,8 @@ Add `?depth=overview` to link the page.
 
 ## Editing the maps
 
-The editor writes `depths.json` on disk as you paint, so it needs the local server:
+The editor writes `depths.json` on disk as you paint, so it needs the local server
+(Node.js 18 or newer, nothing to install):
 
 ```bash
 node server.js
@@ -70,7 +71,8 @@ Then open <http://127.0.0.1:4173/edit.html>. Pick an item in the palette, set a 
 takes one, then click or drag on the grid. The right button erases, drag included, so you do not
 have to reach for the Erase item to clear a few tiles. Saves happen on their own a moment after
 each change; the pill at the top right goes red if one fails. Commit and push `depths.json` to
-publish.
+publish. Before opening a pull request, run `node scripts/check-depths.js`, it checks the file
+the same way the editor does on save.
 
 Two things to know:
 
@@ -121,6 +123,7 @@ never reaches the totals. Editing the file by hand is fine as long as those shap
 | `server.js` | Static files plus `PUT /api/depths`, which writes `depths.json` |
 | `style.css` | Shared by both pages |
 | `depths.json` | The maps |
+| `scripts/check-depths.js` | Checks the shape of `depths.json`, also run by the CI |
 | `og-image.png` | Link preview image |
 
 Three places to know:
@@ -151,6 +154,13 @@ at the root. Pushing `depths.json` updates the maps.
 
 `index.html` holds two absolute URLs, `og:url` and `og:image`, used by Discord and the like to
 build a link preview. Fix both if the address ever changes; a relative path will not do.
+
+## Contributing
+
+Map fixes are the most useful contribution, and you do not need to write code for them: open an
+issue with a screenshot of the game, or fix the tile yourself in the editor and send a pull
+request. [CONTRIBUTING.md](CONTRIBUTING.md) walks through both, and through the few rules for
+code changes (plain files, no dependency, one place that reads a cell).
 
 ## License
 
